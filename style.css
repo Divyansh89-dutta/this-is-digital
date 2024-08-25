@@ -2,31 +2,37 @@
     font-family: font1;
     src: url(/font/pxiEyp8kv8JHgFVrJJfecg.woff2);
 }
+
 @font-face {
     font-family: font2;
     src: url(/font/CooperLtBTWXXLight.woff2);
 }
+
 @font-face {
     font-family: font3;
     src: url(/font/pro-fa-brands-400-5.0.0.woff2);
 }
 
 
-*{
-margin:0%;
-padding:0%;
-box-sizing: border-box;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-html,body{
-width: 100%;
-height: 100%;
+
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
-#main{
+
+#main {
     height: 100%;
     width: 100%;
     background-color: #fff;
     position: relative;
 }
+
 #page1 {
     font-family: font1;
     height: 100%;
@@ -36,13 +42,16 @@ height: 100%;
     align-items: center;
     justify-content: center;
 }
-#page1 img{
-    transition: margin 0.8s ease ;
+
+#page1 img {
+    transition: margin 0.8s ease;
 }
-#page1 img:hover{
+
+#page1 img:hover {
     margin-top: -35px;
 }
-#page1 h1{
+
+#page1 h1 {
     font-size: 5vw;
     font-weight: 100;
     text-align: center;
@@ -50,7 +59,8 @@ height: 100%;
     width: 60%;
     text-transform: capitalize;
 }
-#page1 h1::after{
+
+#page1 h1::after {
     content: "";
     position: absolute;
     width: 37%;
@@ -61,7 +71,8 @@ height: 100%;
     background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
     transform: translate(-50%, -50%);
 }
-#page1 #img1{
+
+#page1 #img1 {
     height: 490px;
     width: 360px;
     position: absolute;
@@ -70,44 +81,50 @@ height: 100%;
     object-fit: cover;
     object-position: top;
 }
-#page1 #img2{
+
+#page1 #img2 {
     height: 220px;
     width: 250px;
     position: absolute;
     right: 25%;
     top: 18%;
 }
-#page1 #img3{
+
+#page1 #img3 {
     height: 310px;
     width: 250px;
     position: absolute;
     right: 10%;
     bottom: 8%;
 }
-#nav{
+
+#nav {
     font-family: font2;
     height: 100px;
     width: 100%;
     position: fixed;
     z-index: 105;
-    background-color:#fff;
+    background-color: #fff;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
 }
-#nav svg{
+
+#nav svg {
     height: 4vh;
     color: black;
 }
-#nav #part2{
+
+#nav #part2 {
     align-items: center;
     display: flex;
     align-self: center;
     justify-content: center;
 }
-#nav #part2 a{
+
+#nav #part2 a {
     text-decoration: none;
     color: #222;
     font-size: 20px;
@@ -115,37 +132,42 @@ height: 100%;
     margin: 20px;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
 }
-#nav #part2 a:hover{
+
+#nav #part2 a:hover {
     text-decoration: underline #00EB8F;
 }
-#nav #part2 a:nth-child(6){
+
+#nav #part2 a:nth-child(6) {
     padding: 7px 18px;
     border-radius: 50px;
     overflow: hidden;
     position: relative;
     border: 1px solid #000;
 }
-#nav #part2 a:nth-child(6) #green{
+
+#nav #part2 a:nth-child(6) #green {
     width: 100%;
     height: 100%;
-    background-color:#00EB8F;
+    background-color: #00EB8F;
     position: absolute;
     top: 0;
     left: -100%;
     transition: left 0.4s ease;
 }
-#nav #part2 a:nth-child(6) h5{
+
+#nav #part2 a:nth-child(6) h5 {
     font-weight: 100;
     position: relative;
     z-index: 99;
 }
-#nav #part2 a:nth-child(6):hover #green{
+
+#nav #part2 a:nth-child(6):hover #green {
     left: 0;
 }
 
-#page2{
-    border-top-left-radius: 120px; 
-    border-top-right-radius: 120px; 
+#page2 {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
     height: 90vh;
     width: 100%;
     background-color: #000;
@@ -156,14 +178,16 @@ height: 100%;
     color: white;
     justify-content: center;
 }
-#page2 h5{
+
+#page2 h5 {
     font-family: font2;
     font-size: 19px;
     /* font-family: "gliroy"; */
     font-weight: 500;
     position: relative;
 }
-#page2 h5::before{
+
+#page2 h5::before {
     content: "";
     position: absolute;
     left: -5%;
@@ -171,9 +195,10 @@ height: 100%;
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color:#00EB8F;
+    background-color: #00EB8F;
 }
-#page2 h1{
+
+#page2 h1 {
     font-size: 59px;
     font-weight: 500;
     font-family: font2;
@@ -183,8 +208,9 @@ height: 100%;
     font-size: 100;
     position: relative;
 }
-#page2 h1::after{
-    content:"";
+
+#page2 h1::after {
+    content: "";
     position: absolute;
     height: 70px;
     width: 280px;
@@ -192,30 +218,35 @@ height: 100%;
     left: 35%;
     background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
 }
-#about-us{
+
+#about-us {
     display: flex;
     align-items: center;
 }
-#about-us>h4{
+
+#about-us>h4 {
     font-size: 28px;
     font-family: font2;
     font-weight: 500;
 }
-#greendiv{
+
+#greendiv {
     height: 32px;
     width: 80px;
-    border: 2px solid ;
+    border: 2px solid;
     border-radius: 50px;
     margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#greendiv .ri-arrow-right-line{
+
+#greendiv .ri-arrow-right-line {
     font-size: 28px;
     font-weight: 100;
 }
-#page3{
+
+#page3 {
     height: 150vh;
     width: 100%;
     display: flex;
@@ -223,50 +254,58 @@ height: 100%;
     align-items: center;
     justify-content: space-between;
 }
-#box1{
+
+#box1 {
     width: 50%;
     display: flex;
 }
-#min-box1{
+
+#min-box1 {
     margin-top: -20px;
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 50px;
 }
-#min-box1 #img4{
+
+#min-box1 #img4 {
     border-bottom-right-radius: 10px;
     width: 13vw;
     object-fit: cover;
     height: 100vh;
 }
-#min-box1 #img5{
+
+#min-box1 #img5 {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 13vw;
     object-fit: cover;
     height: 40vh;
 }
-#min-box2{
+
+#min-box2 {
     margin-top: -20px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-#min-box2 #img6{
+
+#min-box2 #img6 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 20vw;
     object-fit: cover;
     height: 40vh;
 }
-#min-box2 #img7{
+
+#min-box2 #img7 {
     width: 35vw;
     border-radius: 20px;
     object-fit: cover;
     height: 105vh;
 }
-#box2{
+
+#box2 {
     padding: 20px 70px;
     height: 100%;
     width: 50%;
@@ -276,35 +315,49 @@ height: 100%;
     justify-content: center;
     gap: 50px;
 }
-#box2 h1{
+
+#box2 h1 {
     font-size: 8vh;
     font-weight: 600;
     font-family: font2;
 }
 
-#box2 #text2 h5{
+#box2 #text2 h5 {
     font-family: font1;
     font-size: 1.2vw;
     font-weight: 500;
     word-spacing: 1vw;
 }
+#box2 h1::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 210px;
+    bottom:38%;
+    left: 20%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+}
+
 #box2 #text3 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#box2 #text3 #logo img{
+
+#box2 #text3 #logo img {
     object-fit: cover;
     object-position: top;
     width: 4vw;
     height: 8vh;
     border-radius: 50%;
 }
-#box2 #text3 h2{
+
+#box2 #text3 h2 {
     font-family: font1;
     font-size: 3.5vh;
     font-weight: 500;
 }
+
 #box2 #text3 a {
     text-decoration: none;
     color: #222;
@@ -342,7 +395,8 @@ height: 100%;
     position: relative;
     z-index: 102;
 }
-#page4{
+
+#page4 {
     height: 50vh;
     width: 100%;
     display: flex;
@@ -350,7 +404,8 @@ height: 100%;
     align-items: center;
     justify-content: center;
 }
-#page4 h1{
+
+#page4 h1 {
     font-family: font2;
     position: relative;
     text-align: center;
@@ -358,7 +413,8 @@ height: 100%;
     font-size: 4vw;
     font-weight: 500;
 }
-#page4 h1::after{
+
+#page4 h1::after {
     content: "";
     position: absolute;
     top: -6.5%;
@@ -367,42 +423,50 @@ height: 100%;
     height: 14vh;
     width: 10vw;
 }
-#page5{
+
+#page5 {
     height: 60vh;
     align-items: center;
     display: flex;
     justify-content: center;
     width: 100%;
 }
-#logo1{
+
+#logo1 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     gap: 100px;
-    padding: 10vh 0 ;
+    padding: 10vh 0;
     justify-content: space-around;
 }
-#page5 #logo1 img:nth-child(1){
+
+#page5 #logo1 img:nth-child(1) {
     width: 10vw;
-    height:6.3vh;
+    height: 6.3vh;
 }
-#page5 #logo1 img:nth-child(2){
+
+#page5 #logo1 img:nth-child(2) {
     width: 10vw;
-    height:6.3vh;
+    height: 6.3vh;
 }
-#page5 #logo1 img:nth-child(3){
+
+#page5 #logo1 img:nth-child(3) {
     width: 10vw;
-    height:6.3vh;
+    height: 6.3vh;
 }
-#page5 #logo1 img:nth-child(4){
+
+#page5 #logo1 img:nth-child(4) {
     width: 10vw;
-    height:6.3vh;
+    height: 6.3vh;
 }
-#page5 #logo1 img:nth-child(5){
+
+#page5 #logo1 img:nth-child(5) {
     width: 10vw;
-    height:6.3vh;
+    height: 6.3vh;
 }
+
 #page6 {
     height: 100vh;
     width: 100%;
@@ -411,12 +475,14 @@ height: 100%;
     align-items: center;
     justify-content: space-around;
 }
-#page6 #box{
+
+#page6 #box {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
+
 #page6 #box1 {
     padding: 20px 20px;
     border-radius: 10px;
@@ -428,7 +494,8 @@ height: 100%;
     height: 55vh;
     position: relative;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.358); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.358);
+    /* Semi-transparent black background */
 }
 
 /* Background image scaling on hover */
@@ -443,11 +510,13 @@ height: 100%;
     background-size: cover;
     background-position: center;
     transition: transform 0.5s ease;
-    z-index: -1; /* Places the image behind the content */
+    z-index: -1;
+    /* Places the image behind the content */
 }
 
 #page6 #box1:hover::before {
-    transform: scale(1.1); /* Scales the background image on hover */
+    transform: scale(1.1);
+    /* Scales the background image on hover */
 }
 
 /* Text styling inside the box */
@@ -472,7 +541,8 @@ height: 100%;
     overflow: hidden;
     position: relative;
     border: 1px solid #000;
-    transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease; /* Combined transition for color and background */
+    transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease;
+    /* Combined transition for color and background */
 }
 
 /* Hover effect for the link */
@@ -487,9 +557,11 @@ height: 100%;
     background-color: #00EB8F;
     position: absolute;
     top: 0;
-    left: -100%; /* Starts off-screen to the left */
+    left: -100%;
+    /* Starts off-screen to the left */
     transition: left 0.4s ease;
-    z-index: 101; /* Ensure it's below the text but above the background */
+    z-index: 101;
+    /* Ensure it's below the text but above the background */
 }
 
 /* Hover effect to move the green background and change text color simultaneously */
@@ -504,17 +576,22 @@ height: 100%;
     font-size: 1vw;
     font-weight: 600;
     position: relative;
-    z-index: 102; /* Ensures text stays above the green background */
+    z-index: 102;
+    /* Ensures text stays above the green background */
 }
-#page6 #box1 #text2{
+
+#page6 #box1 #text2 {
     color: white;
 }
+
 /* Button container styling */
 #page6 #box1 #button {
     display: flex;
     align-items: center;
-    position: relative; /* Ensures #green is positioned relative to this container */
+    position: relative;
+    /* Ensures #green is positioned relative to this container */
 }
+
 #page6 #box2 {
     padding: 20px 20px;
     border-radius: 10px;
@@ -526,7 +603,8 @@ height: 100%;
     height: 55vh;
     position: relative;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
 }
 
 /* Background image scaling on hover for #box2 */
@@ -541,11 +619,13 @@ height: 100%;
     background-size: cover;
     background-position: center;
     transition: transform 0.5s ease;
-    z-index: -1; /* Places the image behind the content */
+    z-index: -1;
+    /* Places the image behind the content */
 }
 
 #page6 #box2:hover::before {
-    transform: scale(1.1); /* Scales the background image on hover */
+    transform: scale(1.1);
+    /* Scales the background image on hover */
 }
 
 /* Text styling inside #box2 */
@@ -570,7 +650,8 @@ height: 100%;
     overflow: hidden;
     position: relative;
     border: 1px solid #000;
-    transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease; /* Combined transition for color and background */
+    transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease;
+    /* Combined transition for color and background */
 }
 
 /* Hover effect for the link */
@@ -585,9 +666,11 @@ height: 100%;
     background-color: #00EB8F;
     position: absolute;
     top: 0;
-    left: -100%; /* Starts off-screen to the left */
+    left: -100%;
+    /* Starts off-screen to the left */
     transition: left 0.4s ease;
-    z-index: 101; /* Ensure it's below the text but above the background */
+    z-index: 101;
+    /* Ensure it's below the text but above the background */
 }
 
 /* Hover effect to move the green background and change text color simultaneously */
@@ -601,36 +684,43 @@ height: 100%;
     font-size: 1vw;
     font-weight: 100;
     position: relative;
-    z-index: 102; /* Ensures text stays above the green background */
+    z-index: 102;
+    /* Ensures text stays above the green background */
 }
-#page6 #box2 #text1 h2{
+
+#page6 #box2 #text1 h2 {
     color: white;
 }
+
 /* Button container styling */
 #page6 #box2 #text1 #button {
     display: flex;
     align-items: center;
-    position: relative; /* Ensures #green is positioned relative to this container */
+    position: relative;
+    /* Ensures #green is positioned relative to this container */
 }
+
 #page6 #text3 {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: center;
 }
-#page6 #text3 #logo img{
+
+#page6 #text3 #logo img {
     background-color: paleturquoise;
     object-fit: cover;
     object-position: top;
-    width: 4vw;
-    height: 8vh;
+    width: 3vw;
+    height: 6vh;
     border-radius: 50%;
 }
-#page6 #text3 h2{
-    font-family: font2;
-    font-size: 5vh;
-    font-weight: 500;
+
+#page6 #text3 h2 {
+    font-family: font1;
+    font-size: 3.4vh;
+    font-weight: 100;
 }
+
 #page6 #text3 a {
     text-decoration: none;
     color: #222;
@@ -660,18 +750,19 @@ height: 100%;
     left: -100%;
     transition: left 0.4s ease;
 }
+
 /* #page5 #text3 h2{
     font-weight: 100;
 } */
 #page6 #text3 a h4 {
     font-family: font1;
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-weight: 100;
     position: relative;
     z-index: 102;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 668px) {
     #nav {
         font-family: font2;
         height: 100px;
@@ -685,18 +776,20 @@ height: 100%;
         justify-content: space-between;
         padding: 0 30px;
     }
-    
+
     #nav svg {
         height: 5vh;
         color: black;
     }
-    
+
     #nav #part2 {
         align-items: center;
-        display: none; /* Hides the element when screen width is 600px or less */
+        display: none;
+        /* Hides the element when screen width is 600px or less */
         align-self: center;
         justify-content: center;
     }
+
     #page1 {
         font-family: font1;
         height: 70vh;
@@ -706,16 +799,20 @@ height: 100%;
         align-items: center;
         justify-content: center;
     }
-    #page1 h1{
-        font-size: 9vw;
+
+    #page1 h1 {
+        font-size: 10.5vw;
+        margin-top: 20vh;
+        color: rgb(12, 12, 12);
         margin-left: 100px;
-        font-weight: 500;
+        font-weight: 900;
         text-align: center;
         z-index: 99;
         width: 100%;
         text-transform: capitalize;
     }
-    #page1 h1::after{
+
+    #page1 h1::after {
         content: "";
         position: absolute;
         width: 37%;
@@ -726,18 +823,35 @@ height: 100%;
         background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
         transform: translate(-50%, -50%);
     }
-    #page1 #img1{
+    #page1 #img1 {
         display: none;
+        height: 400px;
+        width: 220px;
+        position: absolute;
+        left: 7%;
+        top: 0%;
+        object-fit: cover;
+        object-position: top;
     }
-    #page1 #img2{
-        display: none;
+    
+    #page1 #img2 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: -25%;
+        top: 10%;
     }
-    #page1 #img3{
-        display: none;
+    
+    #page1 #img3 {
+        height: 200px;
+        width: 190px;
+        position: absolute;
+        right: 50%;
+        bottom: 25%;
     }
-    #page2{
-        border-top-left-radius: 120px; 
-        border-top-right-radius: 120px; 
+    #page2 {
+        border-top-left-radius: 120px;
+        border-top-right-radius: 120px;
         height: 70vh;
         width: 125.8vw;
         background-color: #000;
@@ -748,7 +862,8 @@ height: 100%;
         color: white;
         justify-content: center;
     }
-    #page2 h5{
+
+    #page2 h5 {
         /* margin-top: 20vh; */
         font-family: font2;
         font-size: 13.5px;
@@ -758,7 +873,8 @@ height: 100%;
         font-weight: 600;
         position: relative;
     }
-    #page2 h5::before{
+
+    #page2 h5::before {
         content: "";
         position: absolute;
         left: -10%;
@@ -766,9 +882,10 @@ height: 100%;
         height: 12px;
         width: 12px;
         border-radius: 50%;
-        background-color:#00EB8F;
+        background-color: #00EB8F;
     }
-    #page2 h1{
+
+    #page2 h1 {
         font-size: 32px;
         font-weight: 500;
         font-family: font2;
@@ -778,8 +895,9 @@ height: 100%;
         font-size: 100;
         position: relative;
     }
-    #page2 h1::after{
-        content:"";
+
+    #page2 h1::after {
+        content: "";
         position: absolute;
         height: 52px;
         width: 150px;
@@ -787,27 +905,370 @@ height: 100%;
         left: 25%;
         background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
     }
-    #about-us{
+
+    #about-us {
         display: flex;
         align-items: center;
     }
-    #about-us>h4{
+
+    #about-us>h4 {
         font-size: 20px;
         font-family: font2;
         font-weight: 600;
     }
-    #greendiv{
+
+    #greendiv {
         height: 32px;
         width: 80px;
-        border: 2px solid ;
+        border: 2px solid;
         border-radius: 50px;
         margin-left: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #greendiv .ri-arrow-right-line{
+
+    #greendiv .ri-arrow-right-line {
         font-size: 28px;
         font-weight: 100;
     }
+
+    #page3 {
+        margin-top: 30px;
+        height: 140vh;
+        width: 127% !important;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    #box1 {
+        width: 100%;
+        display: flex;
+    }
+    #min-box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #min-box1 #img4 {
+        width: 30vw;
+        object-fit: cover;
+        height: 50vh;
+    }
+    
+    #min-box1 #img5 {
+        width: 30vw;
+        object-fit: cover;
+        height: 25vh;
+    }
+    
+    #min-box2 {
+        display: flex;
+        margin-left: -25vw;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #min-box2 #img6 {
+        width: 60vw;
+        object-fit: cover;
+        height: 25vh;
+    }
+
+    #min-box2 #img7 {
+        width: 85vw;
+        border-radius: 20px;
+        object-fit: cover;
+        height: 60vh;
+    }
+    #box2 {
+        display: flex;
+        width: 100% !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #box2 h1 {
+        font-size: 3.3vh;
+        font-weight: 500;
+        font-family: font2;
+    }
+    #box2 #text2 h5 {
+        font-family: font2;
+        font-size: 3.2vw;
+        font-weight: 500;
+        word-spacing: 1vw;
+    }
+    #box2 h1::after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 100px;
+        bottom: 45%;
+        left: 15%;
+        background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    }
+    #box2 #text3 {
+        margin-left: -60px;
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        width: 120% !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #box2 #text3 #logo img {
+        object-fit: cover;
+        object-position: top;
+        width: 10.5vw;
+        height: 5vh;
+        border-radius: 50%;
+    }
+    
+    #box2 #text3 h2 {
+        font-family: font2;
+        font-size: 2.5vh;
+        font-weight: 500;
+    }
+    
+    #box2 #text3 a {
+        text-decoration: none;
+        color: #222;
+        margin: -10px;
+        padding: 6.5px 12px;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #000;
+        transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    #box2 #text3 a:hover {
+        color: #f7f8f8;
+    }
+    
+    #box2 #text3 a:hover #green {
+        left: 0;
+    }
+    
+    #box2 #text3 #green {
+        width: 100%;
+        height: 100%;
+        background-color: #00EB8F;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: left 0.4s ease;
+    }
+    
+    #box2 #text3 a h4 {
+        font-family: font1;
+        font-size: 2.5vw;
+        font-weight: 100;
+        position: relative;
+        z-index: 102;
+    }
+
+    #page4 {
+        height: 20vh;
+        width: 127% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #page4 h1 {
+        font-family: font2;
+        position: relative;
+        text-align: center;
+        width: 70%;
+        font-size: 7vw;
+        font-weight: 500;
+    }
+    
+    #page4 h1::after {
+        content: "";
+        position: absolute;
+        top: -14.5%;
+        left: 20.3%;
+        background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+        height: 7vh;
+        width: 18vw;
+    }
+    #page5 {
+        height: 60vh;
+        flex-direction: row;
+    }
+
+    #logo1 {
+       margin-left: 50px;
+    }
+
+    #page5 #logo1 img {
+        width: 10vw;
+        height: 6.3vh;
+        max-width: none;
+        max-height: none;
+    }
+
+    #page5 #logo1 img:nth-child(1) {
+        width: 35vw !important;
+        height: 5.3vh;
+    }
+    #page5 #logo1 img:nth-child(2) {
+        display: none;
+    }
+    #page5 #logo1 img:nth-child(3) {
+       display: none;
+    }
+    #page5 #logo1 img:nth-child(4) {
+       display: none;
+    }
+    #page5 #logo1 img:nth-child(5) {
+        width: 35vw !important;
+        height: 5.3vh;
+    }
+    #page6 {
+        margin-top: 30px;
+        height: 130vh;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #page6 #box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100% !important;
+    }
+    #page6 #box1 {
+        padding: 20px 20px;
+        margin-left: 100px;
+        border-radius: 10px;
+        font-family: font2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 120vw;
+        height: 55vh;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.358);
+        /* Semi-transparent black background */
+    }
+    #page6 #box1 img {
+        width: 45vw;
+        height: 7vh;
+    }
+    #page6 #box1 #text1 a {
+        text-decoration: none;
+        color: #222;
+        margin: 20px;
+        padding: 2px 20px;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #000;
+        transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease;
+        /* Combined transition for color and background */
+    }
+    #page6 #box1 #text1 a h4 {
+        font-family: font1;
+        font-size: 3.5vw;
+        font-weight: 100;
+        position: relative;
+        z-index: 102;
+        /* Ensures text stays above the green background */
+    }
+
+    #page6 #box2 {
+        padding: 20px 20px;
+        border-radius: 10px;
+        margin-top: 5vh;
+        margin-right: -26vw;
+        font-family: font2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 120vw !important;
+        height: 55vh;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black background */
+    }
+    #page6 #text2 h2{
+        font-weight: 100;
+    }
+    #page6 #box2 img {
+        width: 35vw;
+        height: 9vh;
+    }
+    #page6 #box2 #text1 a h4 {
+        font-family: font1;
+        font-size: 5vw;
+        font-weight: 100;
+        position: relative;
+        z-index: 102;
+        /* Ensures text stays above the green background */
+    }
+    #page6 #text3 #logo img {
+        margin-left: 50px;
+        background-color: rgb(175, 202, 238);
+        object-fit: cover;
+        object-position: top;
+        width: 14vw;
+        height: 7vh;
+        border-radius: 50%;
+    }
+    
+    #page6 #text3 h2 {
+        font-family: font1;
+        font-size: 2.3vh;
+    }
+    
+    #page6 #text3 a {
+        text-decoration: none;
+        color: #222;
+        margin: -2px;
+        padding: 6.5px 12px;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #000;
+        transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    #page6 #text3 a:hover {
+        color: #f7f8f8;
+    }
+    
+    #page6 #text3 a:hover #green {
+        left: 0;
+    }
+    
+    #page6 #text3 #green {
+        width: 100%;
+        height: 100%;
+        background-color: #00EB8F;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: left 0.4s ease;
+    }
+    #page6 #text3 a h4 {
+        font-family: font1;
+        font-size: 3.5vw;
+        font-weight: 100;
+        position: relative;
+        z-index: 102;
+    }
+    
 }

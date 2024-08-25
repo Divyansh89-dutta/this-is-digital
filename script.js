@@ -1,34 +1,29 @@
 
 var tl = gsap.timeline()
 tl.from("#img1 ",{
-    delay:0.4,
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     y:-60
 })
 tl.from("#img2 ",{
-    delay:0.4,
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     x:60
 })
 tl.from("#img3 ",{
-    delay:0.4,
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     x:60
 })
 tl.from("#nav",{
-    delay:0.9,
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     x:-60
 })
 
 tl.from("#page1 h1",{
-    delay:0.9,
     opacity:0,
-    duration:0.8,
+    duration:0.4,
     y:60,
 })
 gsap.from("#page2 h5, #page2 h1, #page2 #about-us",{
@@ -92,7 +87,7 @@ gsap.from("#page3 #box2 h1, #text2 h5",{
         start:"top 40%",
     }
 })
-gsap.from("#page3 #text3 ",{
+gsap.from("#page3 #box2 ",{
     opacity:0,
     stagger:0.4,
     y:60,
@@ -100,7 +95,7 @@ gsap.from("#page3 #text3 ",{
         trigger:"#page3",
         scroller:"body",
         markers:true,
-        start:"top -30%",
+        start:"top 20%",
     }
 })
 gsap.from("#page4",{
@@ -145,21 +140,5 @@ gsap.from("#page6 #text3 ",{
         scroller:"body",
         markers:true,
         start:"top 10%",
-    }
-})
-var nav = document.querySelector("#nav-part1 h2");
-var navbar = document.querySelector("#nav-bar") 
-
-
-var flag =0 ;
-nav.addEventListener("click", function(){
-    if(flag===0){
-        navbar.style.top= 0;
-        nav.innerHTML = `<i class="ri-close-line"></i>`;
-        flag=1
-    }else{
-        navbar.style.top= "-100%";
-        nav.innerHTML = `<i class="ri-menu-line"></i>`;
-        flag=0
     }
 })
