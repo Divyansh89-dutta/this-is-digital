@@ -125,3 +125,41 @@ gsap.from("#page5 #logo1 img",{
         start:"top 60%",
     }
 })
+gsap.from("#page6 #box1 , #box2",{
+    opacity:0,
+    stagger:0.8,
+    y:60,
+    scrollTrigger:{
+        trigger:"#page6",
+        scroller:"body",
+        markers:true,
+        start:"top 60%",
+    }
+})
+gsap.from("#page6 #text3 ",{
+    opacity:0,
+    stagger:0.8,
+    y:60,
+    scrollTrigger:{
+        trigger:"#page6",
+        scroller:"body",
+        markers:true,
+        start:"top 10%",
+    }
+})
+var nav = document.querySelector("#nav-part1 h2");
+var navbar = document.querySelector("#nav-bar") 
+
+
+var flag =0 ;
+nav.addEventListener("click", function(){
+    if(flag===0){
+        navbar.style.top= 0;
+        nav.innerHTML = `<i class="ri-close-line"></i>`;
+        flag=1
+    }else{
+        navbar.style.top= "-100%";
+        nav.innerHTML = `<i class="ri-menu-line"></i>`;
+        flag=0
+    }
+})
