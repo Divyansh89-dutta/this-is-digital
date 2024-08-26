@@ -33,71 +33,6 @@ body {
     position: relative;
 }
 
-#page1 {
-    font-family: font1;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#page1 img {
-    transition: margin 0.8s ease;
-}
-
-#page1 img:hover {
-    margin-top: -35px;
-}
-
-#page1 h1 {
-    font-size: 5vw;
-    font-weight: 100;
-    text-align: center;
-    z-index: 99;
-    width: 60%;
-    text-transform: capitalize;
-}
-
-#page1 h1::after {
-    content: "";
-    position: absolute;
-    width: 37%;
-    height: 16px;
-    bottom: 2%;
-    left: 50%;
-    background-size: cover;
-    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
-    transform: translate(-50%, -50%);
-}
-
-#page1 #img1 {
-    height: 490px;
-    width: 360px;
-    position: absolute;
-    left: 7%;
-    top: 20%;
-    object-fit: cover;
-    object-position: top;
-}
-
-#page1 #img2 {
-    height: 220px;
-    width: 250px;
-    position: absolute;
-    right: 25%;
-    top: 18%;
-}
-
-#page1 #img3 {
-    height: 310px;
-    width: 250px;
-    position: absolute;
-    right: 10%;
-    bottom: 8%;
-}
-
 #nav {
     font-family: font2;
     height: 100px;
@@ -165,6 +100,72 @@ body {
     left: 0;
 }
 
+#page1 {
+    font-family: font1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 img {
+    transition: margin 0.8s ease;
+}
+
+#page1 img:hover {
+    margin-top: -35px;
+}
+
+#page1 h1 {
+    font-size: 5vw;
+    font-weight: 100;
+    text-align: center;
+    z-index: 99;
+    width: 60%;
+    text-transform: capitalize;
+}
+
+#page1 h1::after {
+    content: "";
+    position: absolute;
+    width: 37%;
+    height: 16px;
+    bottom: 2%;
+    left: 50%;
+    background-size: cover;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    transform: translate(-50%, -50%);
+}
+
+#page1 #img1 {
+    height: 490px;
+    width: 360px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page1 #img2 {
+    height: 220px;
+    width: 250px;
+    position: absolute;
+    right: 25%;
+    top: 18%;
+}
+
+#page1 #img3 {
+    height: 310px;
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 8%;
+}
+
+
 #page2 {
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
@@ -182,7 +183,6 @@ body {
 #page2 h5 {
     font-family: font2;
     font-size: 19px;
-    /* font-family: "gliroy"; */
     font-weight: 500;
     position: relative;
 }
@@ -328,12 +328,13 @@ body {
     font-weight: 500;
     word-spacing: 1vw;
 }
+
 #box2 h1::after {
     content: "";
     position: absolute;
-    height: 20px;
+    height: 12px;
     width: 210px;
-    bottom:38%;
+    bottom: 48%;
     left: 20%;
     background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
 }
@@ -425,7 +426,7 @@ body {
 }
 
 #page5 {
-    height: 60vh;
+    height: 100vh;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -437,34 +438,34 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 100px;
+    gap: 110px;
     padding: 10vh 0;
     justify-content: space-around;
 }
 
 #page5 #logo1 img:nth-child(1) {
     width: 10vw;
-    height: 6.3vh;
+    height: 8.3vh;
 }
 
 #page5 #logo1 img:nth-child(2) {
     width: 10vw;
-    height: 6.3vh;
+    height: 8.3vh;
 }
 
 #page5 #logo1 img:nth-child(3) {
     width: 10vw;
-    height: 6.3vh;
+    height: 8.3vh;
 }
 
 #page5 #logo1 img:nth-child(4) {
     width: 10vw;
-    height: 6.3vh;
+    height: 8.3vh;
 }
 
 #page5 #logo1 img:nth-child(5) {
     width: 10vw;
-    height: 6.3vh;
+    height: 8.3vh;
 }
 
 #page6 {
@@ -491,14 +492,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 40vw;
-    height: 55vh;
+    height: 65vh;
     position: relative;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.358);
-    /* Semi-transparent black background */
 }
 
-/* Background image scaling on hover */
 #page6 #box1::before {
     content: "";
     position: absolute;
@@ -511,27 +510,22 @@ body {
     background-position: center;
     transition: transform 0.5s ease;
     z-index: -1;
-    /* Places the image behind the content */
 }
 
 #page6 #box1:hover::before {
     transform: scale(1.1);
-    /* Scales the background image on hover */
 }
 
-/* Text styling inside the box */
 #page6 #box1 h3 {
     font-size: 4.8vh;
     color: white;
 }
 
-/* Image inside the box */
 #page6 #box1 img {
     width: 10vw;
     height: 7vh;
 }
 
-/* General link styling */
 #page6 #box1 #text1 a {
     text-decoration: none;
     color: #222;
@@ -542,15 +536,12 @@ body {
     position: relative;
     border: 1px solid #000;
     transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease;
-    /* Combined transition for color and background */
 }
 
-/* Hover effect for the link */
 #page6 #box1 #text1 a:hover {
     color: #f7f8f8;
 }
 
-/* Green background inside the button, initially hidden */
 #page6 #box1 #button #green {
     width: 100%;
     height: 100%;
@@ -558,38 +549,31 @@ body {
     position: absolute;
     top: 0;
     left: -100%;
-    /* Starts off-screen to the left */
     transition: left 0.4s ease;
     z-index: 101;
-    /* Ensure it's below the text but above the background */
 }
 
-/* Hover effect to move the green background and change text color simultaneously */
 #page6 #box1:hover #button #green {
     color: white;
     left: 0;
 }
 
-/* Text styling inside the button */
 #page6 #box1 #text1 a h4 {
     font-family: font1;
     font-size: 1vw;
     font-weight: 600;
     position: relative;
     z-index: 102;
-    /* Ensures text stays above the green background */
 }
 
 #page6 #box1 #text2 {
     color: white;
 }
 
-/* Button container styling */
 #page6 #box1 #button {
     display: flex;
     align-items: center;
     position: relative;
-    /* Ensures #green is positioned relative to this container */
 }
 
 #page6 #box2 {
@@ -600,14 +584,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 40vw;
-    height: 55vh;
+    height: 65vh;
     position: relative;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black background */
 }
 
-/* Background image scaling on hover for #box2 */
 #page6 #box2::before {
     content: "";
     position: absolute;
@@ -620,27 +602,22 @@ body {
     background-position: center;
     transition: transform 0.5s ease;
     z-index: -1;
-    /* Places the image behind the content */
 }
 
 #page6 #box2:hover::before {
     transform: scale(1.1);
-    /* Scales the background image on hover */
 }
 
-/* Text styling inside #box2 */
 #page6 #box2 h3 {
     font-size: 4vh;
     color: white;
 }
 
-/* Image inside #box2 */
 #page6 #box2 img {
     width: 10vw;
     height: 9vh;
 }
 
-/* General link styling */
 #page6 #box2 #text1 a {
     text-decoration: none;
     color: #222;
@@ -651,15 +628,12 @@ body {
     position: relative;
     border: 1px solid #000;
     transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease;
-    /* Combined transition for color and background */
 }
 
-/* Hover effect for the link */
 #page6 #box2 #text1 a:hover {
     color: #f7f8f8;
 }
 
-/* Green background inside the button, initially hidden */
 #page6 #box2 #text1 a #green {
     width: 100%;
     height: 100%;
@@ -667,37 +641,30 @@ body {
     position: absolute;
     top: 0;
     left: -100%;
-    /* Starts off-screen to the left */
     transition: left 0.4s ease;
     z-index: 101;
-    /* Ensure it's below the text but above the background */
 }
 
-/* Hover effect to move the green background and change text color simultaneously */
 #page6 #box2 #text1 a:hover #green {
     left: 0;
 }
 
-/* Text styling inside the button */
 #page6 #box2 #text1 a h4 {
     font-family: font1;
     font-size: 1vw;
     font-weight: 100;
     position: relative;
     z-index: 102;
-    /* Ensures text stays above the green background */
 }
 
 #page6 #box2 #text1 h2 {
     color: white;
 }
 
-/* Button container styling */
 #page6 #box2 #text1 #button {
     display: flex;
     align-items: center;
     position: relative;
-    /* Ensures #green is positioned relative to this container */
 }
 
 #page6 #text3 {
@@ -751,9 +718,6 @@ body {
     transition: left 0.4s ease;
 }
 
-/* #page5 #text3 h2{
-    font-weight: 100;
-} */
 #page6 #text3 a h4 {
     font-family: font1;
     font-size: 0.9vw;
@@ -761,52 +725,55 @@ body {
     position: relative;
     z-index: 102;
 }
+
 footer {
-    height: 100%;
+    height: 130%;
     width: 100%;
     background: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  footer #img-text {
-    /* position: absolute; */
+}
+
+footer #img-text {
+    position: absolute;
     background-color: white;
     width: 65vw;
     height: 42vh;
     align-items: center;
     justify-content: center;
     display: flex;
-    /* margin-top: -100vh; */
+    margin-top: -100vh;
     gap: 5vh;
     flex-direction: column;
     background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
     background-position: center;
     background-size: cover;
     overflow: hidden;
-  }
-  
-  footer #img-text::before {
+    z-index: 7;
+}
+
+footer #img-text::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Light black overlay */
-    z-index: 1; /* Ensure overlay is on top of the image */
-  }
-  
-  footer #img-text #text {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+footer #img-text #text {
     color: white;
     text-align: center;
     font-family: font2;
     font-size: 1.9vh;
-    z-index: 2; /* Ensure text is above the overlay */
-  }
-  footer #img-text h1::after {
+    z-index: 2;
+}
+
+footer #img-text h1::after {
     content: "";
     position: absolute;
     width: 8%;
@@ -816,33 +783,34 @@ footer {
     background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
     transform: translate(-50%, -50%);
 }
-  footer #text3 {
+
+footer #text3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3; /* Ensure #text3 is above the overlay */
-  }
-  
-  footer #text3 #logo img {
+    z-index: 3;
+}
+
+footer #text3 #logo img {
     object-fit: cover;
     object-position: top;
     background-color: rgb(68, 161, 201);
     width: 4vw;
     height: 9vh;
     border-radius: 50%;
-    z-index: 3; /* Ensure image is above the overlay */
-  }
-  
-  footer #text3 h2 {
+    z-index: 3;
+}
+
+footer #text3 h2 {
     font-family: font2;
     color: white;
     margin-left: 20px;
     font-size: 3.5vh;
     font-weight: 500;
-    z-index: 3; /* Ensure h2 is above the overlay */
-  }
-  
-  footer #text3 a {
+    z-index: 3;
+}
+
+footer #text3 a {
     text-decoration: none;
     color: #fff;
     margin: 20px;
@@ -852,18 +820,18 @@ footer {
     position: relative;
     border: 0.5px solid #f4f3f3;
     transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    z-index: 3; /* Ensure link is above the overlay */
-  }
-  
-  footer #text3 a:hover {
+    z-index: 3;
+}
+
+footer #text3 a:hover {
     color: #f7f8f8;
-  }
-  
-  footer #text3 a:hover #green {
+}
+
+footer #text3 a:hover #green {
     left: 0;
-  }
-  
-  footer #text3 #green {
+}
+
+footer #text3 #green {
     width: 100%;
     height: 100%;
     background-color: #00EB8F;
@@ -871,532 +839,13 @@ footer {
     top: 0;
     left: -100%;
     transition: left 0.4s ease;
-    z-index: 2; /* Ensure green background appears above the overlay */
-  }
-  
-  footer #text3 a h4 {
+    z-index: 2;
+}
+
+footer #text3 a h4 {
     font-family: font1;
     font-size: 1vw;
     font-weight: 100;
     position: relative;
-    z-index: 4; /* Ensure h4 is above the overlay */
-  }
-footer #text12{
-    color: white;
-    background-color: red;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-@media (max-width: 668px) {
-    #nav {
-        font-family: font2;
-        height: 100px;
-        width: 100%;
-        position: fixed;
-        z-index: 105;
-        background-color: #fff;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 30px;
-    }
-
-    #nav svg {
-        height: 4.5vh;
-        color: black;
-    }
-
-    #nav #part2 {
-        align-items: center;
-        display: none;
-        /* Hides the element when screen width is 600px or less */
-        align-self: center;
-        justify-content: center;
-    }
-
-    #page1 {
-        font-family: font1;
-        height: 70vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #page1 h1 {
-        font-size: 9vw;
-        margin-top: 12.5vh;
-        color: rgb(12, 12, 12);
-        margin-left: 100px;
-        font-weight: 500;
-        text-align: center;
-        z-index: 99;
-        width: 100%;
-        text-transform: capitalize;
-    }
-
-    #page1 h1::after {
-        content: "";
-        position: absolute;
-        width: 42%;
-        height: 10px;
-        bottom: -2%;
-        left: 50%;
-        background-size: cover;
-        background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
-        transform: translate(-50%, -50%);
-    }
-    #page1 #img1 {
-        display: none;
-        height: 400px;
-        width: 220px;
-        position: absolute;
-        left: 7%;
-        top: 0%;
-        object-fit: cover;
-        object-position: top;
-    }
-    
-    #page1 #img2 {
-        height: 200px;
-        width: 200px;
-        position: absolute;
-        right: -25%;
-        top: 10%;
-    }
-    
-    #page1 #img3 {
-        height: 200px;
-        width: 190px;
-        position: absolute;
-        right: 50%;
-        bottom: 25%;
-    }
-    #page2 {
-        border-top-left-radius: 120px;
-        border-top-right-radius: 120px;
-        height: 70vh;
-        width: 125.8vw;
-        background-color: #000;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        justify-content: center;
-    }
-
-    #page2 h5 {
-        /* margin-top: 20vh; */
-        font-family: font2;
-        font-size: 13.5px;
-        text-align: center;
-        width: 50%;
-        /* font-family: "gliroy"; */
-        font-weight: 600;
-        position: relative;
-    }
-
-    #page2 h5::before {
-        content: "";
-        position: absolute;
-        left: -10%;
-        top: 10%;
-        height: 12px;
-        width: 12px;
-        border-radius: 50%;
-        background-color: #00EB8F;
-    }
-
-    #page2 h1 {
-        font-size: 32px;
-        font-weight: 500;
-        font-family: font2;
-        margin: 46px 0;
-        width: 70%;
-        text-align: center;
-        font-size: 100;
-        position: relative;
-    }
-
-    #page2 h1::after {
-        content: "";
-        position: absolute;
-        height: 52px;
-        width: 150px;
-        bottom: 14%;
-        left: 25%;
-        background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
-    }
-
-    #about-us {
-        display: flex;
-        align-items: center;
-    }
-
-    #about-us>h4 {
-        font-size: 20px;
-        font-family: font2;
-        font-weight: 600;
-    }
-
-    #greendiv {
-        height: 32px;
-        width: 80px;
-        border: 2px solid;
-        border-radius: 50px;
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #greendiv .ri-arrow-right-line {
-        font-size: 28px;
-        font-weight: 100;
-    }
-
-    #page3 {
-        margin-top: 30px;
-        height: 140vh;
-        width: 127% !important;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        align-items: center;
-    }
-
-    #box1 {
-        width: 100%;
-        display: flex;
-    }
-    #min-box1 {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    #min-box1 #img4 {
-        width: 30vw;
-        object-fit: cover;
-        height: 50vh;
-    }
-    
-    #min-box1 #img5 {
-        width: 30vw;
-        object-fit: cover;
-        height: 25vh;
-    }
-    
-    #min-box2 {
-        display: flex;
-        margin-left: -25vw;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    #min-box2 #img6 {
-        width: 60vw;
-        object-fit: cover;
-        height: 25vh;
-    }
-
-    #min-box2 #img7 {
-        width: 85vw;
-        border-radius: 20px;
-        object-fit: cover;
-        height: 60vh;
-    }
-    #box2 {
-        display: flex;
-        width: 100% !important;
-        flex-direction: column;
-        gap: 20px;
-    }
-    #box2 h1 {
-        font-size: 3.3vh;
-        font-weight: 500;
-        font-family: font2;
-    }
-    #box2 #text2 h5 {
-        font-family: font2;
-        font-size: 3.2vw;
-        font-weight: 500;
-        word-spacing: 1vw;
-    }
-    #box2 h1::after {
-        content: "";
-        position: absolute;
-        height: 5px;
-        width: 100px;
-        bottom: 45%;
-        left: 15%;
-        background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
-    }
-    #box2 #text3 {
-        margin-left: -60px;
-        margin-top: 20px;
-        display: flex;
-        gap: 20px;
-        width: 120% !important;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #box2 #text3 #logo img {
-        object-fit: cover;
-        object-position: top;
-        width: 10.5vw;
-        height: 5vh;
-        border-radius: 50%;
-    }
-    
-    #box2 #text3 h2 {
-        font-family: font2;
-        font-size: 2.5vh;
-        font-weight: 500;
-    }
-    
-    #box2 #text3 a {
-        text-decoration: none;
-        color: #222;
-        margin: -10px;
-        padding: 6.5px 12px;
-        border-radius: 50px;
-        overflow: hidden;
-        position: relative;
-        border: 1px solid #000;
-        transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-    
-    #box2 #text3 a:hover {
-        color: #f7f8f8;
-    }
-    
-    #box2 #text3 a:hover #green {
-        left: 0;
-    }
-    
-    #box2 #text3 #green {
-        width: 100%;
-        height: 100%;
-        background-color: #00EB8F;
-        position: absolute;
-        top: 0;
-        left: -100%;
-        transition: left 0.4s ease;
-    }
-    
-    #box2 #text3 a h4 {
-        font-family: font1;
-        font-size: 2.5vw;
-        font-weight: 100;
-        position: relative;
-        z-index: 102;
-    }
-
-    #page4 {
-        height: 20vh;
-        width: 127% !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #page4 h1 {
-        font-family: font2;
-        position: relative;
-        text-align: center;
-        width: 70%;
-        font-size: 7vw;
-        font-weight: 500;
-    }
-    
-    #page4 h1::after {
-        content: "";
-        position: absolute;
-        top: -14.5%;
-        left: 20.3%;
-        background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
-        height: 7vh;
-        width: 18vw;
-    }
-    #page5 {
-        height: 60vh;
-        flex-direction: row;
-    }
-
-    #logo1 {
-       margin-left: 50px;
-    }
-
-    #page5 #logo1 img {
-        width: 10vw;
-        height: 6.3vh;
-        max-width: none;
-        max-height: none;
-    }
-
-    #page5 #logo1 img:nth-child(1) {
-        width: 35vw !important;
-        height: 5.3vh;
-    }
-    #page5 #logo1 img:nth-child(2) {
-        display: none;
-    }
-    #page5 #logo1 img:nth-child(3) {
-       display: none;
-    }
-    #page5 #logo1 img:nth-child(4) {
-       display: none;
-    }
-    #page5 #logo1 img:nth-child(5) {
-        width: 35vw !important;
-        height: 5.3vh;
-    }
-    #page6 {
-        margin-top: 30px;
-        height: 130vh;
-        width: 100% !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    #page6 #box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 100% !important;
-    }
-    #page6 #box1 {
-        padding: 20px 20px;
-        margin-left: 100px;
-        border-radius: 10px;
-        font-family: font2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 120vw;
-        height: 55vh;
-        position: relative;
-        overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.358);
-        /* Semi-transparent black background */
-    }
-    #page6 #box1 img {
-        width: 45vw;
-        height: 7vh;
-    }
-    #page6 #box1 #text1 a {
-        text-decoration: none;
-        color: #222;
-        margin: 20px;
-        padding: 2px 20px;
-        border-radius: 50px;
-        overflow: hidden;
-        position: relative;
-        border: 1px solid #000;
-        transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.4s ease;
-        /* Combined transition for color and background */
-    }
-    #page6 #box1 #text1 a h4 {
-        font-family: font1;
-        font-size: 3.5vw;
-        font-weight: 100;
-        position: relative;
-        z-index: 102;
-        /* Ensures text stays above the green background */
-    }
-
-    #page6 #box2 {
-        padding: 20px 20px;
-        border-radius: 10px;
-        margin-top: 5vh;
-        margin-right: -26vw;
-        font-family: font2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 120vw !important;
-        height: 55vh;
-        position: relative;
-        overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent black background */
-    }
-    #page6 #text2 h2{
-        font-weight: 100;
-    }
-    #page6 #box2 img {
-        width: 35vw;
-        height: 9vh;
-    }
-    #page6 #box2 #text1 a h4 {
-        font-family: font1;
-        font-size: 5vw;
-        font-weight: 100;
-        position: relative;
-        z-index: 102;
-        /* Ensures text stays above the green background */
-    }
-    #page6 #text3 #logo img {
-        margin-left: 50px;
-        background-color: rgb(175, 202, 238);
-        object-fit: cover;
-        object-position: top;
-        width: 14vw;
-        height: 7vh;
-        border-radius: 50%;
-    }
-    
-    #page6 #text3 h2 {
-        font-family: font1;
-        font-size: 2.3vh;
-    }
-    
-    #page6 #text3 a {
-        text-decoration: none;
-        color: #222;
-        margin: -2px;
-        padding: 6.5px 12px;
-        border-radius: 50px;
-        overflow: hidden;
-        position: relative;
-        border: 1px solid #000;
-        transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-    
-    #page6 #text3 a:hover {
-        color: #f7f8f8;
-    }
-    
-    #page6 #text3 a:hover #green {
-        left: 0;
-    }
-    
-    #page6 #text3 #green {
-        width: 100%;
-        height: 100%;
-        background-color: #00EB8F;
-        position: absolute;
-        top: 0;
-        left: -100%;
-        transition: left 0.4s ease;
-    }
-    #page6 #text3 a h4 {
-        font-family: font1;
-        font-size: 3.5vw;
-        font-weight: 100;
-        position: relative;
-        z-index: 102;
-    }
-    
+    z-index: 4;
 }
