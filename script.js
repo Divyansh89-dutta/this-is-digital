@@ -30,7 +30,7 @@ gsap.from("#page2 h5, #page2 h1, #page2 #about-us",{
     opacity:0,
     stagger:0.4,
     scrollTrigger:{
-        trigger:"#page2 h5",
+        trigger:"#page2",
         scroller:"body",
         markers:true,
         start:"top 60%",
@@ -76,7 +76,7 @@ gsap.from("#page3 #box1 #img7",{
         start:"top 60%",
     }
 })
-gsap.from("#page3 #box2 h1, #text2 h5",{
+gsap.from("#page3 #box2 h1, #text2 ",{
     opacity:0,
     stagger:0.4,
     y:60,
@@ -140,5 +140,16 @@ gsap.from("#page6 #text3 ",{
         scroller:"body",
         markers:true,
         start:"top 10%",
+    }
+})
+gsap.from("footer #img-text ",{
+    opacity:0,
+    stagger:0.8,
+    y:60,
+    scrollTrigger:{
+        trigger:"footer",
+        scroller:"body",
+        markers:true,
+        start:"top 60%",
     }
 })

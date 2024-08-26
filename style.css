@@ -65,7 +65,7 @@ body {
     position: absolute;
     width: 37%;
     height: 16px;
-    bottom: -10%;
+    bottom: 2%;
     left: 50%;
     background-size: cover;
     background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
@@ -761,7 +761,135 @@ body {
     position: relative;
     z-index: 102;
 }
-
+footer {
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer #img-text {
+    /* position: absolute; */
+    background-color: white;
+    width: 65vw;
+    height: 42vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* margin-top: -100vh; */
+    gap: 5vh;
+    flex-direction: column;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  footer #img-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Light black overlay */
+    z-index: 1; /* Ensure overlay is on top of the image */
+  }
+  
+  footer #img-text #text {
+    color: white;
+    text-align: center;
+    font-family: font2;
+    font-size: 1.9vh;
+    z-index: 2; /* Ensure text is above the overlay */
+  }
+  footer #img-text h1::after {
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 7px;
+    left: 33.2%;
+    background-size: cover;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    transform: translate(-50%, -50%);
+}
+  footer #text3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* Ensure #text3 is above the overlay */
+  }
+  
+  footer #text3 #logo img {
+    object-fit: cover;
+    object-position: top;
+    background-color: rgb(68, 161, 201);
+    width: 4vw;
+    height: 9vh;
+    border-radius: 50%;
+    z-index: 3; /* Ensure image is above the overlay */
+  }
+  
+  footer #text3 h2 {
+    font-family: font2;
+    color: white;
+    margin-left: 20px;
+    font-size: 3.5vh;
+    font-weight: 500;
+    z-index: 3; /* Ensure h2 is above the overlay */
+  }
+  
+  footer #text3 a {
+    text-decoration: none;
+    color: #fff;
+    margin: 20px;
+    padding: 6.5px 12px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    border: 0.5px solid #f4f3f3;
+    transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 3; /* Ensure link is above the overlay */
+  }
+  
+  footer #text3 a:hover {
+    color: #f7f8f8;
+  }
+  
+  footer #text3 a:hover #green {
+    left: 0;
+  }
+  
+  footer #text3 #green {
+    width: 100%;
+    height: 100%;
+    background-color: #00EB8F;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.4s ease;
+    z-index: 2; /* Ensure green background appears above the overlay */
+  }
+  
+  footer #text3 a h4 {
+    font-family: font1;
+    font-size: 1vw;
+    font-weight: 100;
+    position: relative;
+    z-index: 4; /* Ensure h4 is above the overlay */
+  }
+footer #text12{
+    color: white;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 668px) {
     #nav {
         font-family: font2;
@@ -778,7 +906,7 @@ body {
     }
 
     #nav svg {
-        height: 5vh;
+        height: 4.5vh;
         color: black;
     }
 
@@ -801,11 +929,11 @@ body {
     }
 
     #page1 h1 {
-        font-size: 10.5vw;
-        margin-top: 20vh;
+        font-size: 9vw;
+        margin-top: 12.5vh;
         color: rgb(12, 12, 12);
         margin-left: 100px;
-        font-weight: 900;
+        font-weight: 500;
         text-align: center;
         z-index: 99;
         width: 100%;
@@ -815,9 +943,9 @@ body {
     #page1 h1::after {
         content: "";
         position: absolute;
-        width: 37%;
-        height: 16px;
-        bottom: -10%;
+        width: 42%;
+        height: 10px;
+        bottom: -2%;
         left: 50%;
         background-size: cover;
         background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
